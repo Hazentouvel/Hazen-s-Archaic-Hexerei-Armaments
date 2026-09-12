@@ -32,7 +32,7 @@ public class HAHAArmorMaterials {
             Identifier.fromNamespaceAndPath(HazensArchaicHexereiArmaments.MOD_ID, "royal_officer_garments"));
 
     public static final ArmorMaterial IRONCLAD_MATERIAL = new ArmorMaterial(29,
-            makeDefense(3, 6, 8, 3, 12), 18, SoundEvents.ARMOR_EQUIP_IRON,
+            makeDefense(3, 6, 8, 3, 11), 18, SoundEvents.ARMOR_EQUIP_IRON,
             2f,
             0f,
             HAHATags.Items.IRONCLAD_REPAIR, IRONCLAD_KEY);
@@ -44,8 +44,8 @@ public class HAHAArmorMaterials {
             );
 
     public static final ArmorMaterial DESERT_PROWLER_MATERIAL = new ArmorMaterial(29,
-            makeDefense(1, 1, 3, 1, 12), 18, SoundEvents.ARMOR_EQUIP_GOLD,
-            2f,
+            makeDefense(3, 6, 8, 3, 11), 18, SoundEvents.ARMOR_EQUIP_GOLD,
+            3f,
             0f,
             HAHATags.Items.DESERT_PROWLER_REPAIR, DESERT_PROWLER_KEY);
 

@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class HAHAGuns {
 
-    public static final GunProfile DOUBLE_BARREL_SHOTGUN = new GunProfile(
+    public static final GunProfile ROYALTYS_BARREL = new GunProfile(
             () -> {
                 var map = basicGun();
                 map.set(ShotComponents.DAMAGE, Value.of(25));
@@ -32,16 +32,15 @@ public class HAHAGuns {
                 return map;
             },
             2,
-            7,
-            40,
+            8,
+            34,
             FireMode.SEMI,
             null,
             ArmPoseKind.RIFLE,
             ReloadCueStack.of(
-                    new ReloadCue(0.25f, PlayableSound.of(SoundRegistry.BLUNDERBUSS_RELOAD_OPEN, 1.25f, 0.9f, 1.1f)),
-                    new ReloadCue(0.90f, PlayableSound.of(SoundRegistry.BLUNDERBUSS_RELOAD_LOAD, 1.25f, 0.9f, 1.1f)),
-                    new ReloadCue(1.15f, PlayableSound.of(SoundRegistry.COCK_HAMMER, 1.25f, 1.1f, 1.3f)),
-                    new ReloadCue(1.27f, PlayableSound.of(SoundRegistry.BLUNDERBUSS_RELOAD_CLOSE, 1.25f, 0.9f, 1.1f))
+                    new ReloadCue(0.63f, PlayableSound.of(SoundRegistry.BLUNDERBUSS_RELOAD_OPEN, 1.25f, 0.9f, 1.1f)),
+                    new ReloadCue(1f, PlayableSound.of(SoundRegistry.BLUNDERBUSS_RELOAD_LOAD, 1.25f, 0.9f, 1.1f)),
+                    new ReloadCue(1.25f, PlayableSound.of(SoundRegistry.BLUNDERBUSS_RELOAD_CLOSE, 1.25f, 0.9f, 1.1f))
             ),
             PlayableSound.of(SoundRegistry.BLUNDERBUSS_RELOAD_CLOSE, 0.75f, 0.9f, 1.1f),
             FireCycleCueStack.EMPTY,

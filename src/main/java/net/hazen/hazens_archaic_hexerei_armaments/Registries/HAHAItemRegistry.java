@@ -12,7 +12,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class SotPItemRegistry {
+public class HAHAItemRegistry {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(HazensArchaicHexereiArmaments.MOD_ID);
 
     /*
@@ -24,8 +24,8 @@ public class SotPItemRegistry {
      */
 
     // Double Barrel Shotgun
-    public static final DeferredItem<GunItem> DOUBLE_BARREL_SHOTGUN = ITEMS.registerItem("double_barrel_shotgun",
-            properties -> new GunItem(properties, HAHAGuns.DOUBLE_BARREL_SHOTGUN)
+    public static final DeferredItem<GunItem> ROYALTYS_BARREL = ITEMS.registerItem("royaltys_barrel",
+            properties -> new GunItem(properties, HAHAGuns.ROYALTYS_BARREL)
     );
 
     /*

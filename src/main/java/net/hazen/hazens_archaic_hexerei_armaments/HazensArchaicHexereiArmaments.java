@@ -1,5 +1,8 @@
 package net.hazen.hazens_archaic_hexerei_armaments;
 
+import net.hazen.hazens_archaic_hexerei_armaments.Registries.HAHACreativeModeTabs;
+import net.hazen.hazens_archaic_hexerei_armaments.Registries.HAHAEffectRegistry;
+import net.hazen.hazens_archaic_hexerei_armaments.Registries.HAHAItemRegistry;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -38,7 +41,9 @@ public class HazensArchaicHexereiArmaments {
     public HazensArchaicHexereiArmaments(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
-
+        HAHAItemRegistry.register(modEventBus);
+        HAHAEffectRegistry.register(modEventBus);
+        HAHACreativeModeTabs.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         modContainer.registerConfig(ModConfig.Type.COMMON, HAHAConfig.SPEC);

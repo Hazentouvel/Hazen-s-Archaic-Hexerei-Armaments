@@ -10,30 +10,37 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class SotPCreativeModeTabs {
+public class HAHACreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, HazensArchaicHexereiArmaments.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> SOTP_ITEMS = CREATIVE_MODE_TABS.register("hazens_archaic_hexerei_armaments_items",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(SotPItemRegistry.IRONCLAD_HELMET.get()))
+    public static final Supplier<CreativeModeTab> HAHA_ITEMS = CREATIVE_MODE_TABS.register("hazens_archaic_hexerei_armaments_items",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(HAHAItemRegistry.IRONCLAD_HELMET.get()))
                     .title(Component.translatable("creativetab.hazens_archaic_hexerei_armaments.items"))
                     .displayItems((itemDisplayParameters, output) -> {
+
+                        /*
+                        *** Guns
+                         */
+
+                        // Ironclad
+                        output.accept(HAHAItemRegistry.ROYALTYS_BARREL);
 
                         /*
                         *** Armor
                          */
 
                         // Ironclad
-                        output.accept(SotPItemRegistry.IRONCLAD_HELMET);
-                        output.accept(SotPItemRegistry.IRONCLAD_CHESTPLATE);
-                        output.accept(SotPItemRegistry.IRONCLAD_LEGGINGS);
-                        output.accept(SotPItemRegistry.IRONCLAD_BOOTS);
+                        output.accept(HAHAItemRegistry.IRONCLAD_HELMET);
+                        output.accept(HAHAItemRegistry.IRONCLAD_CHESTPLATE);
+                        output.accept(HAHAItemRegistry.IRONCLAD_LEGGINGS);
+                        output.accept(HAHAItemRegistry.IRONCLAD_BOOTS);
 
                         // Desert Prowler
-                        output.accept(SotPItemRegistry.DESERT_PROWLER_HELMET);
-                        output.accept(SotPItemRegistry.DESERT_PROWLER_CHESTPLATE);
-                        output.accept(SotPItemRegistry.DESERT_PROWLER_LEGGINGS);
-                        output.accept(SotPItemRegistry.DESERT_PROWLER_BOOTS);
+                        output.accept(HAHAItemRegistry.DESERT_PROWLER_HELMET);
+                        output.accept(HAHAItemRegistry.DESERT_PROWLER_CHESTPLATE);
+                        output.accept(HAHAItemRegistry.DESERT_PROWLER_LEGGINGS);
+                        output.accept(HAHAItemRegistry.DESERT_PROWLER_BOOTS);
 
                     }).build());
 

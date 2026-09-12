@@ -9,6 +9,6 @@ import net.minecraft.resources.Identifier;
 
 public final class IroncladArmorRenderer<R extends HumanoidRenderState & GeoRenderState> extends GeoArmorRenderer<IroncladArmor, R> {
 	public IroncladArmorRenderer() {
-		super(new DefaultedItemGeoModel<>(Identifier.fromNamespaceAndPath(HazensArchaicHexereiArmaments.MOD_ID, "armor/fossil_armor")));
+		super(new DefaultedItemGeoModel<>(Identifier.fromNamespaceAndPath(HazensArchaicHexereiArmaments.MOD_ID, "armor/ironclad_armor")));
 	}
 }

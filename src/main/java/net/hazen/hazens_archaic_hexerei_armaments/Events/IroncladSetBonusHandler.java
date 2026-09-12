@@ -1,5 +1,6 @@
 package net.hazen.hazens_archaic_hexerei_armaments.Events;
 
+import io.redspace.irons_artifice.entity.Bullet;
 import net.hazen.hazens_archaic_hexerei_armaments.HazensArchaicHexereiArmaments;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Armor.Ironclad.IroncladArmor;
 import net.minecraft.world.damagesource.DamageSource;
@@ -23,34 +24,22 @@ public class IroncladSetBonusHandler {
     @SubscribeEvent
     public static void onLivingIncomingDamage(LivingIncomingDamageEvent event) {
         LivingEntity livingEntity = event.getEntity();
-        if (!livingEntity.getCommandSenderWorld().isClientSide && isCoruscatedValor(livingEntity)) {
-            if (!event.isCanceled()) {
-                ChargeEffect.addChargeStack(livingEntity, event.getSource().getEntity());
+
+        if (!IroncladArmorSetBonus(livingEntity)) {
+            return;
+        }
+
+        DamageSource source = event.getSource();
+
+        if (source.getDirectEntity() instanceof Projectile projectile) {
+
+            if (projectile instanceof Bullet) {
+                event.setAmount(event.getAmount() * 0.50F);
+            }
+            else {
+                event.setAmount(event.getAmount() * 0.70F);
             }
         }
-    }
-
-    public boolean hurtServer(ServerLevel level, DamageSource source, float amount) {
-        if (isDying()) {
-            return false;
-        }
-
-        if(this.isAlliedTo(source.getEntity())){
-            return false;
-        }
-
-        if (source.getDirectEntity() instanceof Projectile) {
-            amount *= 0.5F;
-        }
-
-        float reduced = amount * (1.0F - damageReduction());
-
-        if (reduced >= this.getHealth()) {
-            beginDeathSequence(source);
-            return true;
-        }
-
-        return super.hurtServer(level, source, reduced);
     }
 
 }
