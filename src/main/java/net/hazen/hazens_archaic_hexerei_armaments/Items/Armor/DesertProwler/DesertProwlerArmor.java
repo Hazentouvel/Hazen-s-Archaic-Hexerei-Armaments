@@ -7,9 +7,13 @@ import com.geckolib.animatable.manager.AnimatableManager;
 import com.geckolib.renderer.GeoArmorRenderer;
 import com.geckolib.util.GeckoLibUtil;
 import com.google.common.base.Suppliers;
+import net.hazen.hazens_archaic_hexerei_armaments.Events.DesertProwlerSetBonusHandler;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Utils.HAHAArmorMaterials;
 import net.hazen.hazentouvelib.Utils.AdditionalArmorAttributes;
+import net.minecraft.ChatFormatting;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.util.Unit;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -37,13 +41,17 @@ public class DesertProwlerArmor extends Item implements GeoItem {
                                 HAHAArmorMaterials.DESERT_PROWLER_ATTRIBUTES
                         )
                 )
+                .component(DataComponents.UNBREAKABLE, Unit.INSTANCE)
         );
     }
 
+
     @Override
     public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
-        builder.accept(Component.translatable("tooltip.spiritsofthepast.set_bonus"));
-        builder.accept(Component.translatable("tooltip.spiritsofthepast.fossil_armor.description"));
+        builder.accept(Component.translatable("tooltip.hazens_archaic_hexerei_armaments.set_bonus"));
+        builder.accept(
+                Component.literal(" ").append(Component.translatable("tooltip.hazens_archaic_hexerei_armaments.desert_prowler.description", (int) DesertProwlerSetBonusHandler.DAMAGE_INCREASE * 100))
+                        .withStyle(ChatFormatting.GOLD));
 
         super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
     }

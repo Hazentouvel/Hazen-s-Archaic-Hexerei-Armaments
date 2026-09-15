@@ -7,6 +7,10 @@ import com.google.common.base.Suppliers;
 import io.redspace.irons_artifice.client.gun.GunArmPoses;
 import io.redspace.irons_artifice.client.gun.GunInHandRenderer;
 import io.redspace.irons_artifice.item.GunItem;
+import net.hazen.hazens_archaic_hexerei_armaments.Entities.Projectiles.Gun.Star.StarRenderer;
+import net.hazen.hazens_archaic_hexerei_armaments.Items.Guns.StarCannon.StarCannonRenderer;
+import net.hazen.hazens_archaic_hexerei_armaments.Items.Guns.SuperStarShooter.SuperStarShooterRenderer;
+import net.hazen.hazens_archaic_hexerei_armaments.Registries.HAHAEntityRegistry;
 import net.hazen.hazens_archaic_hexerei_armaments.Registries.HAHAItemRegistry;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -50,6 +54,33 @@ public class HAHAClient {
                 }
             });
         }
+        if (HAHAItemRegistry.STAR_CANNON.get() instanceof GunItem gun) {
+            Identifier modelId = BuiltInRegistries.ITEM.getKey(gun);
+            gun.geoRenderProvider.setValue(new GeoRenderProvider() {
+                private final Supplier<GeoItemRenderer<GunItem>> renderer =
+                        Suppliers.memoize(StarCannonRenderer::new);
+
+                @Override
+                public @Nullable GeoItemRenderer<GunItem> getGeoItemRenderer() {
+                    return this.renderer.get();
+                }
+            });
+        }
+        if (HAHAItemRegistry.SUPER_STAR_SHOOTER.get() instanceof GunItem gun) {
+            Identifier modelId = BuiltInRegistries.ITEM.getKey(gun);
+            gun.geoRenderProvider.setValue(new GeoRenderProvider() {
+                private final Supplier<GeoItemRenderer<GunItem>> renderer =
+                        Suppliers.memoize(SuperStarShooterRenderer::new);
+
+                @Override
+                public @Nullable GeoItemRenderer<GunItem> getGeoItemRenderer() {
+                    return this.renderer.get();
+                }
+            });
+        }
+
+        event.registerEntityRenderer(HAHAEntityRegistry.STAR.get(),
+                context -> new StarRenderer<>(context, HAHAEntityRegistry.STAR.get()));
     }
 
     @SubscribeEvent
@@ -61,6 +92,8 @@ public class HAHAClient {
             }
         };
         event.registerItem(riflePose, HAHAItemRegistry.ROYALTYS_BARREL.get());
+        event.registerItem(riflePose, HAHAItemRegistry.STAR_CANNON.get());
+        event.registerItem(riflePose, HAHAItemRegistry.SUPER_STAR_SHOOTER.get());
     }
 
     @SubscribeEvent

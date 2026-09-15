@@ -1,0 +1,39 @@
+{
+  "star_cannon_reload": {
+    "sounds": [
+      "hazens_archaic_hexerei_armaments:star_cannon_reload"
+    ],
+    "subtitle": "sounds.hazens_archaic_hexerei_armaments.star_cannon_reload"
+  },
+
+  "super_star_shooter_reload": {
+    "sounds": [
+      "hazens_archaic_hexerei_armaments:super_star_shooter_reload"
+    ],
+    "subtitle": "sounds.hazens_archaic_hexerei_armaments.super_star_shooter_reload"
+  },
+
+  "star_fire": {
+    "sounds": [
+      "hazens_archaic_hexerei_armaments:star_fire"
+    ],
+    "subtitle": "sounds.hazens_archaic_hexerei_armaments.star_fire"
+  },
+
+  "star_impact": {
+    "sounds": [
+      "hazens_archaic_hexerei_armaments:star_impact_1",
+      "hazens_archaic_hexerei_armaments:star_impact_2",
+      "hazens_archaic_hexerei_armaments:star_impact_3"
+    ],
+    "subtitle": "sounds.hazens_archaic_hexerei_armaments.star_impact"
+  },
+
+  "star_fail": {
+    "sounds": [
+      "hazens_archaic_hexerei_armaments:star_fail"
+    ],
+    "subtitle": "sounds.hazens_archaic_hexerei_armaments.star_fail"
+  }
+
+}

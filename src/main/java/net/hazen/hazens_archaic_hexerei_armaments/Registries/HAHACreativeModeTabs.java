@@ -25,6 +25,8 @@ public class HAHACreativeModeTabs {
 
                         // Ironclad
                         output.accept(HAHAItemRegistry.ROYALTYS_BARREL);
+                        output.accept(HAHAItemRegistry.STAR_CANNON);
+                        output.accept(HAHAItemRegistry.SUPER_STAR_SHOOTER);
 
                         /*
                         *** Armor

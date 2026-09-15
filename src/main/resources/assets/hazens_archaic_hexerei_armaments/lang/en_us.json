@@ -1,19 +1,33 @@
 {
+  "tooltip.hazens_archaic_hexerei_armaments.set_bonus": "Set Bonus Effect:",
+
   "item.hazens_archaic_hexerei_armaments.royaltys_barrel": "Royalty's Barrel",
+  "item.hazens_archaic_hexerei_armaments.star_cannon": "Star Cannon",
+  "item.hazens_archaic_hexerei_armaments.super_star_shooter": "Super Star Shooter",
 
   "item.hazens_archaic_hexerei_armaments.ironclad_helmet": "Ironclad Helmet",
   "item.hazens_archaic_hexerei_armaments.ironclad_chestplate": "Ironclad Chestplate",
   "item.hazens_archaic_hexerei_armaments.ironclad_leggings": "Ironclad Leggings",
   "item.hazens_archaic_hexerei_armaments.ironclad_boots": "Ironclad Boots",
+  "tooltip.hazens_archaic_hexerei_armaments.ironclad_projectile_resistance.description": "Increases resistance to projectiles by +10%.",
+  "tooltip.hazens_archaic_hexerei_armaments.ironclad_bullet_resistance.description": "Increases resistance bullets by +30%.",
+
 
   "item.hazens_archaic_hexerei_armaments.desert_prowler_helmet": "Desert Prowler Helmet",
   "item.hazens_archaic_hexerei_armaments.desert_prowler_chestplate": "Desert Prowler Chestplate",
   "item.hazens_archaic_hexerei_armaments.desert_prowler_leggings": "Desert Prowler Leggings",
   "item.hazens_archaic_hexerei_armaments.desert_prowler_boots": "Desert Prowler Boots",
+  "tooltip.hazens_archaic_hexerei_armaments.desert_prowler.description": "When crouching, you go invisible and go into a Prowling state. While Prowling, deals +50% damage.",
 
+  "sounds.hazens_archaic_hexerei_armaments.super_star_shooter_reload": "Reloading",
+  "sounds.hazens_archaic_hexerei_armaments.star_cannon_reload": "Reloading",
+
+  "sounds.hazens_archaic_hexerei_armaments.star_impact": "Bullet Impact",
+  "sounds.hazens_archaic_hexerei_armaments.star_fire": "Gun Shot",
+  "sounds.hazens_archaic_hexerei_armaments.star_fail": "Empty Chamber",
 
   "effect.hazens_archaic_hexerei_armaments.prowling": "Prowling",
   "effect.hazens_archaic_hexerei_armaments.prowling.description": "Increases bullet damage significantly",
 
-  "creativetab.hazens_archaic_hexerei_armaments.items": "Hazen's Archaic Hexerei Armaments Items"
+  "creativetab.hazens_archaic_hexerei_armaments.items": "HAHA Items"
 }

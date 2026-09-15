@@ -5,6 +5,7 @@ import net.hazen.hazens_archaic_hexerei_armaments.HazensArchaicHexereiArmaments;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Armor.DesertProwler.DesertProwlerArmor;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Armor.Ironclad.IroncladArmor;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Guns.HAHAGuns;
+import net.hazen.hazens_archaic_hexerei_armaments.Items.Guns.StarCannon.StarCannon;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Utils.HAHAArmorMaterials;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
@@ -28,13 +29,25 @@ public class HAHAItemRegistry {
             properties -> new GunItem(properties, HAHAGuns.ROYALTYS_BARREL)
     );
 
-    /*
-    *** Armor
-     */
+
+    // Star Cannon
+    public static final DeferredItem<GunItem> STAR_CANNON = ITEMS.registerItem("star_cannon",
+            properties -> new GunItem(properties, HAHAGuns.STAR_CANNON)
+    );
+
+    // Super Star Shooter
+    public static final DeferredItem<GunItem> SUPER_STAR_SHOOTER = ITEMS.registerItem("super_star_shooter",
+            properties -> new GunItem(properties.rarity(Rarity.EPIC), HAHAGuns.SUPER_STAR_SHOOTER)
+    );
+
+   /*
+   *** Armor
+    */
 
     public static final DeferredItem<Item> IRONCLAD_HELMET = ITEMS.registerItem(
             "ironclad_helmet",
-            properties -> new IroncladArmor(properties.humanoidArmor(HAHAArmorMaterials.IRONCLAD_MATERIAL, ArmorType.HELMET), ArmorType.HELMET));
+            properties -> new IroncladArmor(properties
+                    .humanoidArmor(HAHAArmorMaterials.IRONCLAD_MATERIAL, ArmorType.HELMET), ArmorType.HELMET));
     public static final DeferredItem<Item> IRONCLAD_CHESTPLATE = ITEMS.registerItem(
             "ironclad_chestplate",
             properties -> new IroncladArmor(properties.humanoidArmor(HAHAArmorMaterials.IRONCLAD_MATERIAL, ArmorType.CHESTPLATE), ArmorType.CHESTPLATE));
