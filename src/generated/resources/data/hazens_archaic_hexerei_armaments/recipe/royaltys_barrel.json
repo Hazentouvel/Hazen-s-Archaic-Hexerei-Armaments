@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gun",
+  "key": {
+    "B": "hazentouvelib:steel_block",
+    "C": "irons_artifice:clockwork_components",
+    "D": "irons_artifice:blunderbuss",
+    "M": "irons_artifice:mechanical_components",
+    "Q": "minecraft:quartz",
+    "S": "hazentouvelib:steel_ingot"
+  },
+  "pattern": [
+    "CQ ",
+    "SMQ",
+    " BD"
+  ],
+  "result": {
+    "id": "hazens_archaic_hexerei_armaments:royaltys_barrel"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ironclad",
+  "key": {
+    "B": "hazentouvelib:steel_block",
+    "I": "minecraft:iron_boots",
+    "N": "minecraft:netherite_scrap",
+    "S": "hazentouvelib:steel_ingot"
+  },
+  "pattern": [
+    "   ",
+    "SNS",
+    "BIB"
+  ],
+  "result": {
+    "id": "hazens_archaic_hexerei_armaments:ironclad_boots"
+  }
+}

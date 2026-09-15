@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_clockwork_rifle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "irons_artifice:clockwork_rifle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hazens_archaic_hexerei_armaments:star_cannon"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_clockwork_rifle"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hazens_archaic_hexerei_armaments:star_cannon"
+    ]
+  }
+}

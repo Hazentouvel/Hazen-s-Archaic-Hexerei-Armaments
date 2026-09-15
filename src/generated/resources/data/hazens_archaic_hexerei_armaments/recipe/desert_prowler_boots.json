@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "desert_prowler",
+  "key": {
+    "B": "irons_artifice:blackpowder",
+    "D": "minecraft:diamond_chestplate",
+    "L": "minecraft:leather",
+    "M": "irons_artifice:mechanical_components"
+  },
+  "pattern": [
+    "   ",
+    "BDB",
+    "LML"
+  ],
+  "result": {
+    "id": "hazens_archaic_hexerei_armaments:desert_prowler_boots"
+  }
+}

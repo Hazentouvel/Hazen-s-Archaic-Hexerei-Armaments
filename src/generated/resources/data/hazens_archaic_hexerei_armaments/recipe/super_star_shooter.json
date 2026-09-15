@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gun",
+  "key": {
+    "B": "hazentouvelib:steel_block",
+    "C": "irons_artifice:clockwork_components",
+    "M": "irons_artifice:mechanical_components",
+    "N": "minecraft:netherite_ingot",
+    "R": "hazens_archaic_hexerei_armaments:star_cannon",
+    "S": "minecraft:netherite_scrap"
+  },
+  "pattern": [
+    " MB",
+    "CSN",
+    "RC "
+  ],
+  "result": {
+    "id": "hazens_archaic_hexerei_armaments:super_star_shooter"
+  }
+}

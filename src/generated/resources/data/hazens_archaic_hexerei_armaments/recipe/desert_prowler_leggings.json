@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "desert_prowler",
+  "key": {
+    "B": "irons_artifice:blackpowder",
+    "D": "minecraft:diamond_chestplate",
+    "G": "minecraft:gold_ingot",
+    "L": "minecraft:leather",
+    "M": "irons_artifice:mechanical_components"
+  },
+  "pattern": [
+    "GMG",
+    "LDL",
+    "B B"
+  ],
+  "result": {
+    "id": "hazens_archaic_hexerei_armaments:desert_prowler_leggings"
+  }
+}

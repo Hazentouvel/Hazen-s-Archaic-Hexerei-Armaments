@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gun",
+  "key": {
+    "B": "irons_artifice:blackpowder",
+    "C": "irons_artifice:clockwork_components",
+    "I": "hazentouvelib:steel_ingot",
+    "R": "irons_artifice:clockwork_rifle",
+    "S": "minecraft:nether_star"
+  },
+  "pattern": [
+    " II",
+    "CSB",
+    "RC "
+  ],
+  "result": {
+    "id": "hazens_archaic_hexerei_armaments:star_cannon"
+  }
+}
