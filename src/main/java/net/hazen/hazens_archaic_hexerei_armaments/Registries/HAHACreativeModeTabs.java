@@ -22,9 +22,8 @@ public class HAHACreativeModeTabs {
                         /*
                         *** Guns
                          */
-
-                        // Ironclad
                         output.accept(HAHAItemRegistry.ROYALTYS_BARREL);
+                        output.accept(HAHAItemRegistry.TACTICAL_CROSSGUN);
                         output.accept(HAHAItemRegistry.STAR_CANNON);
                         output.accept(HAHAItemRegistry.SUPER_STAR_SHOOTER);
 

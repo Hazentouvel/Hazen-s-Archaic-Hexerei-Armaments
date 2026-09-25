@@ -41,7 +41,7 @@ public class DesertProwlerSetBonusHandler {
             return;
         }
 
-        Value damage = (Value) event.getShotProfile().get(ShotComponents.DAMAGE);
+        Value damage = (Value) event.getShotProfile().peek(ShotComponents.DAMAGE);
         if (player.hasEffect(HAHAEffectRegistry.PROWLING)) {
             damage.addModifier(new ValueModifier(DAMAGE_INCREASE, ValueModifier.Operation.MULTIPLY_TOTAL, ValueModifier.Type.BENEFICIAL));
             return;

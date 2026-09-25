@@ -29,6 +29,11 @@ public class HAHAItemRegistry {
             properties -> new GunItem(properties, HAHAGuns.ROYALTYS_BARREL)
     );
 
+    // Double Barrel Shotgun
+    public static final DeferredItem<GunItem> TACTICAL_CROSSGUN = ITEMS.registerItem("tactical_crossgun",
+            properties -> new GunItem(properties, HAHAGuns.TACTICAL_CROSSGUN)
+    );
+
 
     // Star Cannon
     public static final DeferredItem<GunItem> STAR_CANNON = ITEMS.registerItem("star_cannon",

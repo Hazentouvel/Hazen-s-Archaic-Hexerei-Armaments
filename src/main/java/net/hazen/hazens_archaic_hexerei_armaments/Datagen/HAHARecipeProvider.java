@@ -49,6 +49,18 @@ public class HAHARecipeProvider extends RecipeProvider {
                 .group("gun")
                 .save(output);
 
+        shaped(RecipeCategory.COMBAT, HAHAItemRegistry.TACTICAL_CROSSGUN.get())
+                .pattern("NS ")
+                .pattern("SC ")
+                .pattern(" PN")
+                .define('P', ItemRegistry.OVERCHARGED_POWDER.get())
+                .define('C', ItemRegistry.CLOCKWORK_COMPONENTS.get())
+                .define('N', Items.NETHERITE_INGOT)
+                .define('S', Items.NETHERITE_SCRAP)
+                .unlockedBy(getHasName(Items.NETHERITE_INGOT), has(Items.NETHERITE_INGOT))
+                .group("gun")
+                .save(output);
+
         shaped(RecipeCategory.COMBAT, HAHAItemRegistry.STAR_CANNON.get())
                 .pattern(" II")
                 .pattern("CSB")

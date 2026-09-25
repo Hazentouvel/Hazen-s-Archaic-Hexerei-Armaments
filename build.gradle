@@ -128,7 +128,7 @@ dependencies {
      */
     implementation "com.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
     implementation "curse.maven:irons-lib-1492763:8678532"
-    implementation "curse.maven:irons_artifice-1650193:8781113"
+    implementation "curse.maven:irons_artifice-1650193:8911931"
     implementation "curse.maven:hazentouvelib-1528722:8847664"
 
 

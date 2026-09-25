@@ -1,5 +1,6 @@
 package net.hazen.hazens_archaic_hexerei_armaments.Datagen.Tags;
 
+import io.redspace.irons_artifice.utils.IronsArtificeTags;
 import net.hazen.hazens_archaic_hexerei_armaments.HazensArchaicHexereiArmaments;
 import net.hazen.hazens_archaic_hexerei_armaments.Registries.HAHAItemRegistry;
 import net.hazen.hazentouvelib.Registries.HLItemRegistry;
@@ -18,6 +19,13 @@ public class HAHAItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider registries) {
+
+        tag(IronsArtificeTags.GUNS)
+                .add(HAHAItemRegistry.ROYALTYS_BARREL.get())
+                .add(HAHAItemRegistry.STAR_CANNON.get())
+                .add(HAHAItemRegistry.SUPER_STAR_SHOOTER.get())
+                .add(HAHAItemRegistry.TACTICAL_CROSSGUN.get())
+        ;
 
         tag(HAHATags.Items.IRONCLAD_REPAIR)
                 .add(HLItemRegistry.STEEL_INGOT.get())

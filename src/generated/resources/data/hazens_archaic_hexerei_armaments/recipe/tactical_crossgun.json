@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gun",
+  "key": {
+    "C": "irons_artifice:clockwork_components",
+    "N": "minecraft:netherite_ingot",
+    "P": "irons_artifice:overcharged_powder_modifier",
+    "S": "minecraft:netherite_scrap"
+  },
+  "pattern": [
+    "NS ",
+    "SC ",
+    " PN"
+  ],
+  "result": {
+    "id": "hazens_archaic_hexerei_armaments:tactical_crossgun"
+  }
+}
