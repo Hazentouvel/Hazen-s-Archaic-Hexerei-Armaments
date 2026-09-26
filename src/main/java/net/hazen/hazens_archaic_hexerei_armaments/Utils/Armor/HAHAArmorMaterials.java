@@ -2,8 +2,6 @@ package net.hazen.hazens_archaic_hexerei_armaments.Utils.Armor;
 
 import net.hazen.hazens_archaic_hexerei_armaments.Datagen.Tags.HAHATags;
 import net.hazen.hazens_archaic_hexerei_armaments.HazensArchaicHexereiArmaments;
-import net.hazen.hazentouvelib.Datagen.HLTags;
-import net.hazen.hazentouvelib.Registries.HLItemRegistry;
 import net.minecraft.Util;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
@@ -34,6 +32,14 @@ public class HAHAArmorMaterials {
             () -> Ingredient.of(HAHATags.Items.IRONCLAD_REPAIR),
             4,
             0.15F);
+
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> DESERT_PROWLER_MATERIAL = register("desert_prowler",
+            battlemageArmorMap(),
+            20,
+            SoundEvents.ARMOR_EQUIP_NETHERITE,
+            () -> Ingredient.of(HAHATags.Items.DESERT_PROWLER_REPAIR),
+            3,
+            0.0F);
 
 
     private static DeferredHolder<ArmorMaterial, ArmorMaterial> register(

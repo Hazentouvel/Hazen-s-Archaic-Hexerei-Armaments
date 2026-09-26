@@ -54,7 +54,7 @@ public class HAHAGuns {
 
     public static final GunProfile STAR_CANNON = GunProfile.builder(
                     16,
-                    7,
+                    6,
                     25,
                     FireMode.AUTO,
                     ArmPoseKind.RIFLE,
@@ -81,7 +81,7 @@ public class HAHAGuns {
 
     public static final GunProfile SUPER_STAR_SHOOTER = GunProfile.builder(
                     24,
-                    8,
+                    7,
                     60,
                     FireMode.AUTO,
                     ArmPoseKind.RIFLE,

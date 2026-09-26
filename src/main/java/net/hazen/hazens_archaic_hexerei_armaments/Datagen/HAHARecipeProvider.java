@@ -225,7 +225,7 @@ public class HAHARecipeProvider extends RecipeProvider implements IConditionBuil
                 .define('B', ItemRegistry.BLACKPOWDER.get())
                 .define('L', Items.LEATHER)
                 .define('G', Items.GOLD_INGOT)
-                .define('D', Items.DIAMOND_CHESTPLATE)
+                .define('D', Items.DIAMOND_LEGGINGS)
                 .unlockedBy(getHasName(Items.LEATHER), has(Items.LEATHER))
                 .group("desert_prowler")
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(HazensArchaicHexereiArmaments.MOD_ID, "crafting/armor/desert_prowler/desert_prowler_leggings"));
@@ -237,7 +237,7 @@ public class HAHARecipeProvider extends RecipeProvider implements IConditionBuil
                 .define('M', ItemRegistry.MECHANICAL_COMPONENTS.get())
                 .define('B', ItemRegistry.BLACKPOWDER.get())
                 .define('L', Items.LEATHER)
-                .define('D', Items.DIAMOND_CHESTPLATE)
+                .define('D', Items.DIAMOND_BOOTS)
                 .unlockedBy(getHasName(Items.LEATHER), has(Items.LEATHER))
                 .group("desert_prowler")
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(HazensArchaicHexereiArmaments.MOD_ID, "crafting/armor/desert_prowler/desert_prowler_boots"));

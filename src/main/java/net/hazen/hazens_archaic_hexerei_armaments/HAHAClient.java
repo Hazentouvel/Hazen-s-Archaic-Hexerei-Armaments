@@ -28,7 +28,7 @@ import javax.annotation.Nullable;
 import java.util.function.Supplier;
 
 @Mod(value = HazensArchaicHexereiArmaments.MOD_ID, dist = Dist.CLIENT)
-@EventBusSubscriber(modid = HazensArchaicHexereiArmaments.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = HazensArchaicHexereiArmaments.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class HAHAClient {
     public HAHAClient(ModContainer container) {
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
