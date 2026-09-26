@@ -58,6 +58,12 @@ public class HAHACreativeModeTabs {
                         output.accept(HAHAItemRegistry.DESERT_PROWLER_LEGGINGS.get());
                         output.accept(HAHAItemRegistry.DESERT_PROWLER_BOOTS.get());
 
+                        // Clockwork Artificer
+                        output.accept(HAHAItemRegistry.CLOCKWORK_ARTIFICER_HELMET.get());
+                        output.accept(HAHAItemRegistry.CLOCKWORK_ARTIFICER_CHESTPLATE.get());
+                        output.accept(HAHAItemRegistry.CLOCKWORK_ARTIFICER_LEGGINGS.get());
+                        output.accept(HAHAItemRegistry.CLOCKWORK_ARTIFICER_BOOTS.get());
+
                     }).build());
 
 

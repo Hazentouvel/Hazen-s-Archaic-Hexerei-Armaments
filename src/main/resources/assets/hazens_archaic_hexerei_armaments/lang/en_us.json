@@ -23,6 +23,13 @@
   "item.hazens_archaic_hexerei_armaments.desert_prowler_boots": "Desert Prowler Boots",
   "tooltip.hazens_archaic_hexerei_armaments.desert_prowler.description": "When crouching, you go invisible and go into a Prowling state. While Prowling, deals +50% damage.",
 
+
+  "item.hazens_archaic_hexerei_armaments.clockwork_artificer_helmet": "Clockwork Artificer Helmet",
+  "item.hazens_archaic_hexerei_armaments.clockwork_artificer_chestplate": "Clockwork Artificer Chestplate",
+  "item.hazens_archaic_hexerei_armaments.clockwork_artificer_leggings": "Clockwork Artificer Leggings",
+  "item.hazens_archaic_hexerei_armaments.clockwork_artificer_boots": "Clockwork Artificer Boots",
+  "tooltip.hazens_archaic_hexerei_armaments.clockwork_artificer.description": "",
+
   "block.hazens_archaic_hexerei_armaments.nora_statue_pose_1": "Nora Statue",
   "block.hazens_archaic_hexerei_armaments.nora_statue_pose_2": "Nora Statue",
   "block.hazens_archaic_hexerei_armaments.nora_statue_pose_3": "Nora Statue",

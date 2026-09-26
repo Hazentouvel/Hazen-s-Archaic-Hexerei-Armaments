@@ -3,6 +3,7 @@ package net.hazen.hazens_archaic_hexerei_armaments.Registries;
 
 import io.redspace.irons_artifice.item.GunItem;
 import net.hazen.hazens_archaic_hexerei_armaments.HazensArchaicHexereiArmaments;
+import net.hazen.hazens_archaic_hexerei_armaments.Items.Armor.ClockworkArtificer.ClockworkArtificerArmor;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Armor.DesertProwler.DesertProwlerArmor;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Armor.Ironclad.IroncladArmor;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Blocks.Statues.NoraStatue.Pose1.Item.NoraStatueItemPose1;
@@ -106,6 +107,24 @@ public class HAHAItemRegistry {
 
 
     public static final DeferredHolder<Item, Item> DESERT_PROWLER_BOOTS = ITEMS.register("desert_prowler_boots", () -> new DesertProwlerArmor(ArmorItem.Type.BOOTS, new Item.Properties()
+            .durability(ArmorItem.Type.BOOTS.getDurability(96))
+    ));
+
+    // Clockwork Artificer Armor Set
+    public static final DeferredHolder<Item, Item> CLOCKWORK_ARTIFICER_HELMET = ITEMS.register("clockwork_artificer_helmet", () -> new ClockworkArtificerArmor(ArmorItem.Type.HELMET, new Item.Properties()
+            .durability(ArmorItem.Type.HELMET.getDurability(96))
+    ));
+
+    public static final DeferredHolder<Item, Item> CLOCKWORK_ARTIFICER_CHESTPLATE = ITEMS.register("clockwork_artificer_chestplate", () -> new ClockworkArtificerArmor(ArmorItem.Type.CHESTPLATE, new Item.Properties()
+            .durability(ArmorItem.Type.CHESTPLATE.getDurability(96))
+    ));
+
+    public static final DeferredHolder<Item, Item> CLOCKWORK_ARTIFICER_LEGGINGS = ITEMS.register("clockwork_artificer_leggings", () -> new ClockworkArtificerArmor(ArmorItem.Type.LEGGINGS, new Item.Properties()
+            .durability(ArmorItem.Type.LEGGINGS.getDurability(96))
+    ));
+
+
+    public static final DeferredHolder<Item, Item> CLOCKWORK_ARTIFICER_BOOTS = ITEMS.register("clockwork_artificer_boots", () -> new ClockworkArtificerArmor(ArmorItem.Type.BOOTS, new Item.Properties()
             .durability(ArmorItem.Type.BOOTS.getDurability(96))
     ));
 

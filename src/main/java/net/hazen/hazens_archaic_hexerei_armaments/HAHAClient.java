@@ -1,6 +1,7 @@
 package net.hazen.hazens_archaic_hexerei_armaments;
 
 import com.google.common.base.Suppliers;
+import io.redspace.irons_artifice.client.gun.GunGeoModel;
 import io.redspace.irons_artifice.client.gun.GunInHandRenderer;
 import io.redspace.irons_artifice.item.GunItem;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Guns.StarCannon.StarCannonRenderer;
