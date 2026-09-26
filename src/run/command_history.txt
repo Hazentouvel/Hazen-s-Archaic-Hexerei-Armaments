@@ -1,8 +1,0 @@
-/give @s hazens_archaic_hexerei_armaments:star_cannon
-/give @s hazens_archaic_hexerei_armaments:tactical_crossgun
-/summon irons_spellbooks:fire_boss
-/tick freeze
-/tick unfreeze
-/time set night
-/summon irons_spellbooks:fire_boss
-/time set night

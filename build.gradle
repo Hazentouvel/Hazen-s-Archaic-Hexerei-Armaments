@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.146'
+    id 'net.neoforged.moddev' version '2.0.147'
     id 'idea'
 }
 
@@ -27,34 +27,54 @@ sourceSets.main.resources {
 }
 
 repositories {
-    // Add here additional repositories if required by some of the dependencies below.
-    exclusiveContent {
-        forRepository {
-            maven {
-                name = 'GeckoLib'
-                url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
-            }
+    flatDir {
+        dir 'libs'
+    }
+
+    maven {
+        name = "Iron's Maven - Release"
+        url = "https://code.redspace.io/releases"
+    }
+
+    maven {
+        name = "Iron's Maven - Snapshots"
+        url = "https://code.redspace.io/snapshots"
+    }
+
+    maven { url = "https://maven.enginehub.org/repo/" }
+    maven {
+        url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
+        content {
+            includeGroup("software.bernie.geckolib")
         }
-        filter { includeGroupAndSubgroups('com.geckolib') }
     }
     maven {
-        url "https://cursemaven.com"
+        name = "Illusive Soulworks maven"
+        url = "https://maven.theillusivec4.top/"
     }
+    maven { url = "https://cursemaven.com" }
+    maven { url = "https://maven.blamejared.com" }
+    maven { url = "https://maven.kosmx.dev/" }
 }
 
 base {
     archivesName = mod_id
 }
 
-// Mojang ships Java 25 to end users in 26.1.2, so mods should target Java 25.
-java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+// Mojang ships Java 21 to end users in 1.21, so mods should target Java 21.
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
     // Specify the version of NeoForge to use.
     version = project.neo_version
 
+    parchment {
+        mappingsVersion = project.parchment_mappings_version
+        minecraftVersion = project.parchment_minecraft_version
+    }
+
     // This line is optional. Access Transformers are automatically detected
-    accessTransformers = project.files('src/main/templates/META-INF/accesstransformer.cfg')
+    // accessTransformers = project.files('src/main/resources/META-INF/accesstransformer.cfg')
 
     // Default run configurations.
     // These can be tweaked, removed, or duplicated as needed.
@@ -80,7 +100,7 @@ neoForge {
         }
 
         data {
-            clientData()
+            data()
             // example of overriding the workingDirectory set in configureEach above, uncomment if you want to use it
             // gameDirectory = project.file('run-data')
 
@@ -124,20 +144,47 @@ configurations {
 
 dependencies {
     /*
-     *** Dependencies **************************************************************************************************
+    *** Main Dependencies **********************************************************************************************
      */
-    implementation "com.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
-    implementation "curse.maven:irons-lib-1492763:8678532"
-    implementation "curse.maven:irons_artifice-1650193:8911931"
-    implementation "curse.maven:hazentouvelib-1528722:8847664"
 
+    //Iron's Arms 'n Artifice
+    implementation "curse.maven:irons_arms_n_artifice-1650193:8974274"
+    //Iron's Spells 'n Spellbooks
+    implementation "curse.maven:irons_spells_n_spellbooks-855414:8680204"
+    implementation "curse.maven:iron_lib-1492763:8973642"
+    implementation "curse.maven:geckolib-388172:8893490"
+    implementation "curse.maven:player_animator-658587:6024462"
+    implementation "curse.maven:curios-309927:6529130"
+    implementation "curse.maven:caelus-308989:5694215"
+    //Apothic Attributes
+    //implementation "curse.maven:apothic-attributes-898963:6302334"
+    //implementation "curse.maven:placebo-283644:6337156"
+    //compileOnly "curse.maven:apotheosis-${apotheosis_version}"
+
+    //Ace Utils
+    //implementation "curse.maven:ace_utils-1299492:8789930"
+
+    //HazentouveLib
+    implementation "curse.maven:hazentouvelib-1528722:8977077"
 
     /*
-    *** Runtime only ***************************************************************************************************
+    *** Runtime Only ***************************************************************************************************
      */
-    runtimeOnly "curse.maven:jei-238222:8548511"
-    runtimeOnly "curse.maven:jei-225738:8786904"
-    runtimeOnly "curse.maven:dummy-499980:8831495"
+
+    //JEI
+    compileOnly "mezz.jei:jei-${jei_mc_version}-common-api:${jei_version}"
+    compileOnly "mezz.jei:jei-${jei_mc_version}-neoforge-api:${jei_version}"
+    runtimeOnly "mezz.jei:jei-${jei_mc_version}-neoforge:${jei_version}"
+
+    // Embeddium
+    localRuntime "curse.maven:embeddium-908741:6118392"
+
+    //Jade
+    localRuntime "curse.maven:jade-324717:6853386"
+
+    // MmmMmmMmm
+    localRuntime "curse.maven:mmm-225738:7206981"
+    localRuntime "curse.maven:moonlight_lib-499980:7669172"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -147,6 +194,7 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
+            loader_version_range   : loader_version_range,
             mod_id                 : mod_id,
             mod_name               : mod_name,
             mod_license            : mod_license,

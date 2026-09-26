@@ -1,14 +1,23 @@
 package net.hazen.hazens_archaic_hexerei_armaments.Items.Armor.DesertProwler;
 
-import com.geckolib.model.DefaultedItemGeoModel;
-import com.geckolib.renderer.GeoArmorRenderer;
-import com.geckolib.renderer.base.GeoRenderState;
-import net.hazen.hazens_archaic_hexerei_armaments.HazensArchaicHexereiArmaments;
-import net.minecraft.client.renderer.entity.state.HumanoidRenderState;
-import net.minecraft.resources.Identifier;
+import io.redspace.ironslib.transmog.client.CapeData;
+import io.redspace.ironslib.transmog.client.ICapeDataProvider;
+import io.redspace.ironslib.transmog.client.TransmogArmorRenderer;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.phys.Vec3;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
-public final class DesertProwlerArmorRenderer<R extends HumanoidRenderState & GeoRenderState> extends GeoArmorRenderer<DesertProwlerArmor, R> {
-	public DesertProwlerArmorRenderer() {
-		super(new DefaultedItemGeoModel<>(Identifier.fromNamespaceAndPath(HazensArchaicHexereiArmaments.MOD_ID, "armor/desert_prowler_armor")));
-	}
+import java.util.Optional;
+
+public class DesertProwlerArmorRenderer extends TransmogArmorRenderer<DesertProwlerArmor> {
+
+    public DesertProwlerArmorRenderer(DesertProwlerArmorModel desertProwlerArmorModel) {
+        super(new DesertProwlerArmorModel());
+
+        this.withCapeBone(new TransmogArmorRenderer.CapeBone("cape", new Vec3(0.5F, 0.5F, 0.5F)));
+    }
+
+
 }

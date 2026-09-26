@@ -1,24 +1,14 @@
 package net.hazen.hazens_archaic_hexerei_armaments;
 
-import com.geckolib.animatable.client.GeoRenderProvider;
-import com.geckolib.model.DefaultedItemGeoModel;
-import com.geckolib.renderer.GeoItemRenderer;
 import com.google.common.base.Suppliers;
-import io.redspace.irons_artifice.client.gun.GunArmPoses;
 import io.redspace.irons_artifice.client.gun.GunInHandRenderer;
 import io.redspace.irons_artifice.item.GunItem;
-import net.hazen.hazens_archaic_hexerei_armaments.Client.Keybinds.HAHAKeybinds;
-import net.hazen.hazens_archaic_hexerei_armaments.Entities.Projectiles.Gun.Star.StarRenderer;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Guns.StarCannon.StarCannonRenderer;
 import net.hazen.hazens_archaic_hexerei_armaments.Items.Guns.SuperStarShooter.SuperStarShooterRenderer;
-import net.hazen.hazens_archaic_hexerei_armaments.Registries.HAHAEntityRegistry;
 import net.hazen.hazens_archaic_hexerei_armaments.Registries.HAHAItemRegistry;
-import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.Identifier;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -27,10 +17,12 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
-import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import software.bernie.geckolib.animatable.client.GeoRenderProvider;
+import software.bernie.geckolib.model.DefaultedItemGeoModel;
+import software.bernie.geckolib.renderer.GeoItemRenderer;
 
 import javax.annotation.Nullable;
 import java.util.function.Supplier;
@@ -45,7 +37,7 @@ public class HAHAClient {
     @SubscribeEvent
     public static void registerRenderers(final EntityRenderersEvent.RegisterRenderers event) {
         if (HAHAItemRegistry.ROYALTYS_BARREL.get() instanceof GunItem gun) {
-            Identifier modelId = BuiltInRegistries.ITEM.getKey(gun);
+            ResourceLocation modelId = BuiltInRegistries.ITEM.getKey(gun);
             gun.geoRenderProvider.setValue(new GeoRenderProvider() {
                 private final Supplier<GeoItemRenderer<GunItem>> renderer =
                         Suppliers.memoize(() -> new GunInHandRenderer(new DefaultedItemGeoModel<>(modelId)));
@@ -57,7 +49,7 @@ public class HAHAClient {
             });
         }
         if (HAHAItemRegistry.TACTICAL_CROSSGUN.get() instanceof GunItem gun) {
-            Identifier modelId = BuiltInRegistries.ITEM.getKey(gun);
+            ResourceLocation modelId = BuiltInRegistries.ITEM.getKey(gun);
             gun.geoRenderProvider.setValue(new GeoRenderProvider() {
                 private final Supplier<GeoItemRenderer<GunItem>> renderer =
                         Suppliers.memoize(() -> new GunInHandRenderer(new DefaultedItemGeoModel<>(modelId)));
@@ -69,7 +61,7 @@ public class HAHAClient {
             });
         }
         if (HAHAItemRegistry.STAR_CANNON.get() instanceof GunItem gun) {
-            Identifier modelId = BuiltInRegistries.ITEM.getKey(gun);
+            ResourceLocation modelId = BuiltInRegistries.ITEM.getKey(gun);
             gun.geoRenderProvider.setValue(new GeoRenderProvider() {
                 private final Supplier<GeoItemRenderer<GunItem>> renderer =
                         Suppliers.memoize(StarCannonRenderer::new);
@@ -81,7 +73,7 @@ public class HAHAClient {
             });
         }
         if (HAHAItemRegistry.SUPER_STAR_SHOOTER.get() instanceof GunItem gun) {
-            Identifier modelId = BuiltInRegistries.ITEM.getKey(gun);
+            ResourceLocation modelId = BuiltInRegistries.ITEM.getKey(gun);
             gun.geoRenderProvider.setValue(new GeoRenderProvider() {
                 private final Supplier<GeoItemRenderer<GunItem>> renderer =
                         Suppliers.memoize(SuperStarShooterRenderer::new);
@@ -92,18 +84,10 @@ public class HAHAClient {
                 }
             });
         }
-
-        event.registerEntityRenderer(HAHAEntityRegistry.STAR.get(),
-                context -> new StarRenderer<>(context, HAHAEntityRegistry.STAR.get()));
     }
 
     @SubscribeEvent
     public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
-    }
-
-    @SubscribeEvent
-    static void registerKeyMappings(RegisterKeyMappingsEvent event) {
-        event.register(HAHAKeybinds.MODE_SWITCH);
     }
 
     @SubscribeEvent
