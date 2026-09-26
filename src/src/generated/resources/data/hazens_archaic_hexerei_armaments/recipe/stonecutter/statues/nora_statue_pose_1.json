@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:stone"
+  },
+  "result": {
+    "count": 1,
+    "id": "hazens_archaic_hexerei_armaments:nora_statue_pose_1"
+  }
+}

@@ -1,0 +1,75 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 2.45, 1.075]
+				},
+				{
+					"name": "right_arm",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "left_arm",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "gun",
+					"parent": "root",
+					"pivot": [0, 3, 1],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{"origin": [-2, 9, -2], "size": [4, 2, 4], "uv": [14, 8]},
+						{"origin": [-1, 11, -1], "size": [2, 14, 2], "pivot": [0, 12, 0], "rotation": [0, -45, 0], "uv": [6, 8]},
+						{"origin": [-0.5, 11, 1], "size": [1, 3, 2], "pivot": [-0.5, 11, 1], "rotation": [35, 0, 0], "uv": [22, 28]},
+						{"origin": [-0.5, 15, 1], "size": [1, 3, 2], "pivot": [-0.5, 15, 1], "rotation": [35, 0, 0], "uv": [22, 28]},
+						{"origin": [-0.5, 19, 1], "size": [1, 3, 2], "pivot": [-0.5, 19, 1], "rotation": [35, 0, 0], "uv": [22, 28]}
+					]
+				},
+				{
+					"name": "gunbladeHandle",
+					"parent": "gun",
+					"pivot": [0, 22, 2],
+					"cubes": [
+						{"origin": [-1, -1, -1], "size": [2, 10, 2], "uv": [14, 21]},
+						{"origin": [-1, -1, 1], "size": [2, 6, 2], "inflate": -0.025, "pivot": [0, -1, 1], "rotation": [35, 0, 0], "uv": [24, 0]},
+						{"origin": [-1.5, -3, -2.5], "size": [3, 2, 6], "pivot": [0, -3, -2.5], "rotation": [17.5, 0, 0], "uv": [6, 0]}
+					]
+				},
+				{
+					"name": "handGuard",
+					"parent": "gunbladeHandle",
+					"pivot": [0, 10, -1],
+					"rotation": [-30, 0, 0],
+					"cubes": [
+						{"origin": [-1, 6, -3], "size": [2, 4, 2], "uv": [28, 14]},
+						{"origin": [-0.5, 6, -3], "size": [1, 2, 5], "pivot": [-0.5, 6, -3], "rotation": [-52.5, 0, 0], "uv": [22, 21]}
+					]
+				},
+				{
+					"name": "blade",
+					"parent": "gun",
+					"pivot": [0, 4, -2],
+					"cubes": [
+						{"origin": [-0.5, 10, -4], "size": [1, 19, 2], "uv": [0, 0]},
+						{"origin": [-0.5, 9, -5], "size": [1, 4, 4], "inflate": 0.025, "pivot": [0, 11, -3], "rotation": [-45, 0, 0], "uv": [0, 24]},
+						{"origin": [-0.5, 29, -3], "size": [1, 2, 1], "uv": [0, 21]},
+						{"origin": [-0.5, 27, -4], "size": [1, 1, 6], "inflate": 0.025, "pivot": [-0.5, 27, -4], "rotation": [62.5, 0, 0], "uv": [14, 14]}
+					]
+				}
+			]
+		}
+	]
+}

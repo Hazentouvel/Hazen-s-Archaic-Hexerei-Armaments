@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hazens_archaic_hexerei_armaments:item/armor_icons/desert_prowler_boots"
+  }
+}

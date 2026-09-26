@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gun",
+  "key": {
+    "B": {
+      "item": "hazentouvelib:steel_block"
+    },
+    "C": {
+      "item": "irons_artifice:clockwork_components"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    "CBS",
+    "RNR",
+    "SBC"
+  ],
+  "result": {
+    "count": 2,
+    "id": "hazens_archaic_hexerei_armaments:warhog_cog"
+  }
+}

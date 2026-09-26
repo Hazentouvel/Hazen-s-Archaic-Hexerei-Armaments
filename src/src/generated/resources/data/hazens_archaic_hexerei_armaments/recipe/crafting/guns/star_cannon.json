@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gun",
+  "key": {
+    "B": {
+      "item": "irons_artifice:blackpowder"
+    },
+    "C": {
+      "item": "hazens_archaic_hexerei_armaments:warhog_cog"
+    },
+    "I": {
+      "item": "irons_spellbooks:mithril_scrap"
+    },
+    "R": {
+      "item": "irons_artifice:clockwork_rifle"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    " II",
+    "CSB",
+    "RC "
+  ],
+  "result": {
+    "count": 1,
+    "id": "hazens_archaic_hexerei_armaments:star_cannon"
+  }
+}

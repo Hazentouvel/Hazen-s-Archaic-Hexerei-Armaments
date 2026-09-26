@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "desert_prowler",
+  "key": {
+    "B": {
+      "item": "irons_artifice:blackpowder"
+    },
+    "D": {
+      "item": "minecraft:diamond_helmet"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "M": {
+      "item": "irons_artifice:mechanical_components"
+    }
+  },
+  "pattern": [
+    " G ",
+    "LML",
+    "BDB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "hazens_archaic_hexerei_armaments:desert_prowler_helmet"
+  }
+}

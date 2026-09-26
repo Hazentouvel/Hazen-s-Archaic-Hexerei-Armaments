@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ironclad",
+  "key": {
+    "B": {
+      "item": "hazentouvelib:steel_block"
+    },
+    "I": {
+      "item": "minecraft:iron_helmet"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "S": {
+      "item": "hazentouvelib:steel_ingot"
+    }
+  },
+  "pattern": [
+    "SBS",
+    "NIN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "hazens_archaic_hexerei_armaments:ironclad_helmet"
+  }
+}

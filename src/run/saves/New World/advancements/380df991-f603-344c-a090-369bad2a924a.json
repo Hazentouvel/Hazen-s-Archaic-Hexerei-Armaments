@@ -1,0 +1,495 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-09-25 19:42:05 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-09-25 19:42:05 -0400"
+    },
+    "done": false
+  },
+  "irons_artifice:arms": {
+    "criteria": {
+      "arms": "2026-09-25 19:42:53 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/archevoker_helmet_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:17 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/cryomancer_helmet_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:17 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/shadowwalker_helmet_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:17 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/cultist_helmet_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:17 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/electromancer_helmet_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:17 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/plagued_helmet_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:17 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/pyromancer_helmet_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:17 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/priest_helmet_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:17 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/shadowwalker_boots_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/electromancer_leggings_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/cryomancer_leggings_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/electromancer_chestplate_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/archevoker_boots_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/pyromancer_boots_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/archevoker_leggings_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/archevoker_chestplate_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/pyromancer_leggings_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/cultist_leggings_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/electromancer_boots_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/cultist_boots_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/pyromancer_chestplate_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/priest_leggings_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/priest_chestplate_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/shadowwalker_chestplate_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/plagued_boots_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/shadowwalker_leggings_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/priest_boots_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/cultist_chestplate_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/plagued_leggings_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/cryomancer_boots_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/plagued_chestplate_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "irons_spellbooks:recipes/misc/cryomancer_chestplate_crafting": {
+    "criteria": {
+      "unlocked": "2026-09-25 19:53:18 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-09-25 21:20:04 -0400"
+    },
+    "done": true
+  },
+  "irons_artifice:artifice": {
+    "criteria": {
+      "artifice": "2026-09-25 21:23:19 -0400"
+    },
+    "done": true
+  },
+  "irons_artifice:fully_loaded": {
+    "criteria": {
+      "fully_loaded": "2026-09-25 21:23:35 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2026-09-25 21:23:45 -0400"
+    },
+    "done": true
+  },
+  "hazens_archaic_hexerei_armaments:recipes/combat/crafting/guns/super_star_shooter": {
+    "criteria": {
+      "has_star_cannon": "2026-09-25 22:27:30 -0400"
+    },
+    "done": true
+  },
+  "irons_artifice:seven_sockets": {
+    "criteria": {
+      "seven_sockets": "2026-09-25 23:20:03 -0400"
+    },
+    "done": true
+  },
+  "hazens_archaic_hexerei_armaments:recipes/combat/crafting/guns/star_cannon": {
+    "criteria": {
+      "has_clockwork_rifle": "2026-09-25 23:20:18 -0400"
+    },
+    "done": true
+  },
+  "irons_artifice:mag_fed": {
+    "criteria": {
+      "clockwork_rifle": "2026-09-25 23:20:18 -0400"
+    },
+    "done": true
+  },
+  "irons_artifice:recipes/misc/chain_shot_modifier": {
+    "criteria": {
+      "has_precursor": "2026-09-25 23:22:30 -0400"
+    },
+    "done": true
+  },
+  "irons_artifice:recipes/misc/hook_shot_modifier": {
+    "criteria": {
+      "has_precursor": "2026-09-25 23:22:30 -0400"
+    },
+    "done": true
+  },
+  "irons_artifice:recipes/misc/venom_capsule_modifier": {
+    "criteria": {
+      "has_precursor": "2026-09-25 23:22:30 -0400"
+    },
+    "done": true
+  },
+  "irons_artifice:recipes/misc/scattershot_modifier": {
+    "criteria": {
+      "has_precursor": "2026-09-25 23:22:30 -0400"
+    },
+    "done": true
+  },
+  "irons_artifice:recipes/misc/cowboy_hat": {
+    "criteria": {
+      "precursor": "2026-09-25 23:22:30 -0400"
+    },
+    "done": true
+  },
+  "irons_artifice:over_over_overkill": {
+    "criteria": {
+      "over_over_overkill": "2026-09-25 23:24:14 -0400"
+    },
+    "done": true
+  },
+  "hazens_archaic_hexerei_armaments:recipes/combat/crafting/guns/royaltys_barrel": {
+    "criteria": {
+      "has_cinder_essence": "2026-09-25 23:24:15 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_bricks": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_wall": {
+    "criteria": {
+      "has_stone_bricks": "2026-09-25 23:40:47 -0400"
+    },
+    "done": true
+  },
+  "hazens_archaic_hexerei_armaments:recipes/misc/stonecutter/statues/nora_statue_pose_1": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "hazens_archaic_hexerei_armaments:recipes/misc/stonecutter/statues/nora_statue_pose_2": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "hazens_archaic_hexerei_armaments:recipes/misc/stonecutter/statues/nora_statue_pose_3": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "hazens_archaic_hexerei_armaments:recipes/misc/stonecutter/statues/nora_statue_pose_4": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cracked_stone_bricks": {
+    "criteria": {
+      "has_stone_bricks": "2026-09-25 23:40:47 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-09-25 23:40:47 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs": {
+    "criteria": {
+      "has_stone_bricks": "2026-09-25 23:40:47 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_bricks_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks": {
+    "criteria": {
+      "has_tag": "2026-09-25 23:40:47 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_button": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stonecutter": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_pressure_plate": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/netherite_ingot": {
+    "criteria": {
+      "has_netherite_scrap": "2026-09-25 23:45:39 -0400"
+    },
+    "done": true
+  },
+  "irons_artifice:ventilated": {
+    "criteria": {
+      "ventilated": "2026-09-25 23:50:08 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2026-09-25 23:46:09 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_wall_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-09-25 23:40:47 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_walls_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-09-25 23:40:47 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab": {
+    "criteria": {
+      "has_stone_bricks": "2026-09-25 23:40:47 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-09-25 23:40:47 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks_stone_from_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/grindstone": {
+    "criteria": {
+      "has_stone_slab": "2026-09-25 23:40:58 -0400"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "golden_carrot": "2026-09-25 23:46:57 -0400"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/stone_stairs": {
+    "criteria": {
+      "has_stone": "2026-09-25 23:40:04 -0400"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

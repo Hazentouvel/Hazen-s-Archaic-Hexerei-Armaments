@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gun",
+  "key": {
+    "C": {
+      "item": "hazens_archaic_hexerei_armaments:warhog_cog"
+    },
+    "E": {
+      "item": "irons_spellbooks:cinder_essence"
+    },
+    "M": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "N": {
+      "item": "hazentouvelib:steel_block"
+    },
+    "P": {
+      "item": "irons_artifice:overcharged_powder_modifier"
+    },
+    "S": {
+      "item": "irons_spellbooks:mithril_scrap"
+    }
+  },
+  "pattern": [
+    "MS ",
+    "SCE",
+    " PN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "hazens_archaic_hexerei_armaments:tactical_crossgun"
+  }
+}

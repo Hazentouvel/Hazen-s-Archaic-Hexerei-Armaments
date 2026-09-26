@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gun",
+  "key": {
+    "B": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "C": {
+      "item": "hazens_archaic_hexerei_armaments:warhog_cog"
+    },
+    "M": {
+      "item": "irons_artifice:clockwork_components"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "R": {
+      "item": "hazens_archaic_hexerei_armaments:star_cannon"
+    },
+    "S": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    " MB",
+    "CSN",
+    "RC "
+  ],
+  "result": {
+    "count": 1,
+    "id": "hazens_archaic_hexerei_armaments:super_star_shooter"
+  }
+}
