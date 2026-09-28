@@ -14,8 +14,8 @@ import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 @EventBusSubscriber(modid = HazensArchaicHexereiArmaments.MOD_ID)
 public class IroncladSetBonusHandler {
 
-    public static final float BULLET_RESISTANCE = 0.2F;
-    public static final float PROJECTILE_RESISTANCE = 0.1F;
+    public static final float BULLET_RESISTANCE = 0.3F;
+    public static final float PROJECTILE_RESISTANCE = 0.7F;
 
     private static boolean IroncladArmorSetBonus(LivingEntity entity) {
         return entity.getItemBySlot(ArmorItem.Type.HELMET.getSlot()).getItem() instanceof IroncladArmor &&

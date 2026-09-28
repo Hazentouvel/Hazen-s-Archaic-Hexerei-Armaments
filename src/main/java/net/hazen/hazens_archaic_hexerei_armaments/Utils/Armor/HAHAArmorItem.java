@@ -89,7 +89,7 @@ public class HAHAArmorItem extends HLArmorItem implements GeoItem {
     // Geckolib
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController<HAHAArmorItem>(this, "controler", this::predicate));
+        controllers.add(new AnimationController<HAHAArmorItem>(this, "controller", this::predicate));
     }
 
     private PlayState predicate(AnimationState<HAHAArmorItem> itemAnimationState)
@@ -102,8 +102,6 @@ public class HAHAArmorItem extends HLArmorItem implements GeoItem {
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;
     }
-
-
 
     @Override
     public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {

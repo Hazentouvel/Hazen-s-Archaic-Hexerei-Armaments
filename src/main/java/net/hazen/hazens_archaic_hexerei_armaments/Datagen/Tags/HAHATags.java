@@ -1,9 +1,11 @@
 package net.hazen.hazens_archaic_hexerei_armaments.Datagen.Tags;
 
 import net.hazen.hazens_archaic_hexerei_armaments.HazensArchaicHexereiArmaments;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 
 public class HAHATags {

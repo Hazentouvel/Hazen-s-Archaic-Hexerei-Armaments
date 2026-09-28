@@ -40,7 +40,7 @@ public class DesertProwlerArmor extends ImbuableHAHAArmorItem implements IDisabl
         super.appendHoverText(stack, context, lines, flag);
 
         lines.add(Component.translatable("tooltip.hazens_archaic_hexerei_armaments.set_bonus"));
-        lines.add(Component.translatable("item.hazens_archaic_hexerei_armaments.desert_prowler.description")
+        lines.add(Component.translatable("tooltip.hazens_archaic_hexerei_armaments.desert_prowler.description")
                 .withStyle(ChatFormatting.ITALIC)
         );
 
